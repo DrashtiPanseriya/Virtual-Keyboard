@@ -1,0 +1,92 @@
+.keyboard{
+    width:100%;
+    margin-left: 0px;
+    margin-top:10px;
+    height:600px;
+    position:fixed;
+    border:2px solid black;
+    background-color: rgb(19, 18, 90);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to bottom , rgb(19, 18, 90),rgb(74, 95, 130));
+}
+.keyboard-hidden {
+    bottom: -100%;
+}
+.keys{
+    
+    margin-left:10px;
+    margin-top:10px;
+    display:flex;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    column-gap:20px;
+    justify-content: space-around;
+}
+.num-key{
+    
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+}
+.alpha-key-1{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    width:58%;
+    margin-left: 30px;
+}
+.alpha-key-2{
+    display: flex;
+    justify-content: space-around;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    width:70%;
+}
+.alpha-key-3{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    width:95%;
+    margin-left: 30px;
+}
+.spacebar{
+    margin-left:50px;
+}
+.key{
+    margin:10px;
+    width:55px;
+    height:50px;
+    border-radius: 4px;
+    position:relative;
+    background-color: rgb(255, 255, 255,0.6);
+    color:white;
+    border:none;
+    cursor: pointer;
+    justify-content: center;
+}
+.wider-key{
+    width:90px;
+}
+.more-wider-key{
+    width:600px;
+}
+.key:active{
+    background-color:  rgb(255, 255, 255,0.2);
+}
+.key-activatable::after{
+    content:'';
+    top:10px;
+    left:10px;
+    position:absolute;
+    height:8px;
+    width:8px;
+    background-color: rgba(0,0,0,0.4);
+    border-radius:50%;
+}
+.key-active::after{
+    background-color: #08ff00;
+
+}
